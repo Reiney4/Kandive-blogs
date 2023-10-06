@@ -62,9 +62,6 @@ class User_blogposts(db.Model):
 
     @validates('rating')
     def checks_rating(self, key, rating):
-        if rating in ['Good', 'Awesome', 'Fantastic']:
-            raise ValueError("Rating must be a value either 'Good', 'Awesome', or 'Fantastic'")
-        else:
-            return rating
+         return rating
         
         
